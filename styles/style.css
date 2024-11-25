@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-fundo: #ffffff;
+    --cor-primaria: #000000;
+    --cor-cabecalho: #eee8aa;
+    --cor-rodape: #00ffff;
+    --cor-botao: #333333;
+    --cor-botao-borda: #000000;
+    --cor-botao-hover: #ff0000;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    padding: 24px;
+    align-items: center;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.cabecalho__menu__botao {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-botao);
+    border: 2px solid var(--cor-botao-borda);
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 10px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.cabecalho__menu__botao:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.rodape {
+    background-color:var(--cor-rodape);
+    color: var(--cor-fundo);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
